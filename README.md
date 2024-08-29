@@ -1,6 +1,6 @@
 # Discussion and conclusion
 
-**1.** All textual features are manually looked at - Probabale text that may indicate an malicious file were checked for correlation(**2.1**)
+**1.** All textual features were manually examined: Potential text patterns indicative of malicious files were analyzed for correlations(**2.1**)
 
 **2.** Correlation
 
@@ -10,9 +10,9 @@
 
     2.3 Between Outliers features and labels (More than 2 stds): ['f_68', 'f_70', 'f_74', 'f_83', 'f_87']
 
-Only 2 correlations out of 8 are shown in the final model to be important
+Only 2 out of the 8 correlations are considered important in the final model.
 
-**3.** No clusters are vizulaied in 2D.
+**3.** No clusters are visualized  in 2D.
 
 **4.** Model results
 
@@ -22,7 +22,7 @@ Only 2 correlations out of 8 are shown in the final model to be important
 
 # Furure impovment:
 
-**1.** Filling NaN values are done with the __Mode__:
+**1.** Filling NaN values is done using the __mode__.
 
     1.1 Some most frequnt values, are small percentage of dataset. E.g: 
         f_0: 28.93%
@@ -34,6 +34,6 @@ Only 2 correlations out of 8 are shown in the final model to be important
    
 **2.** Textual features:
 
-    2.1 Instead of looking at them as close set, we can pass them into DL model to get their embeddings.
-   
-    2.2 A dimension reduction technique can be implied on those embeddings to find outliers
+    2.1 Rather than treating these features as a close set, we can feed them into a deep learning model to obtain their embeddings.
+
+    2.2 We can then apply a dimensionality reduction technique to these embeddings to identify outliers.
